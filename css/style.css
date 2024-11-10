@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+    --colorPrincipal: #fc8e11;
+    --colorSegundario: #EDEDED;
+    --colorNegro: #000000;
+    --colorBlanco: #ffffff;
+
+    --fuentePrincipal: "PT Sans", serif;
+    --fuenteSegundaria: "Montserrat", sans-serif;
+}
+
+/* Globales */
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--colorNegro);
+    font-size: 1.6rem;
+    font-family: var(--fuentePrincipal);
+    color:var(--colorBlanco);
+}
+
+.titulo{
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.boton{
+    display: inline-block;
+    width: 14.4rem;
+    padding: 1.6rem;
+    border: none;
+    background-color: var(--colorPrincipal);
+    color: var(--colorBlanco);
+    font-size: 1.6rem;
+    cursor:pointer;
+}
+
+/* contenedor */
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header__contenedor{
+    height: 6rem;
+}
+
+.header__contenido{
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+}
+
+.header__texto{
+    color: var(--colorBlanco);
+    text-decoration: none;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav{
+    display: flex;
+    width: 65.3rem;
+    gap: 3.2rem;
+}
+
+.nav__elemento{
+    list-style: none;
+}
+
+.nav__enlace{
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--colorBlanco);
+    white-space: nowrap;
+    padding: .5rem;
+}
+
+.nav__enlace:hover{
+    background-color: var(--colorPrincipal);
+    border-radius: 1rem 0;
+}
+
+/* banner */
+
+.banner{
+    display: flex;
+    align-items: center;
+}
+
+.banner__titulo{
+    font-size: 5.2rem;
+    margin: 9.3rem auto 2.4rem auto;
+}
+
+
+.banner__parrafo{
+    font-size: 2rem;
+}
+
+
+.banner__imagen{
+    width: 36.8rem;
+    height: 36.8rem;
+    border-radius: 50%;
+    padding: .5rem;
+    border: 7px 	dotted var(--colorPrincipal);
+}
+
+.banner__enlaces{
+    display: flex;
+    margin-top: 2.4rem;
+    margin-bottom: 9.6rem;
+    gap: 6rem;
+}
+
+.banner__enlaces a{
+    color: var(--colorBlanco);
+    text-decoration: none;
+}
+
+.flecha{
+    font-weight: bold;
+}
+
+
+/* sobre mi */
+
+.sobremi{
+    background-color: var(--colorPrincipal);
+}
+
+.sobremi__contenedor{
+    padding: 6rem 0 0 0;
+}
+
+.sobremi__Titulo{
+    text-align: start;
+    margin-bottom: 1.6rem;
+}
+
+.sobremi__texto{
+    font-size: 1.6rem;
+    text-align: start;
+    width: 81.5rem;
+}
+
+.sobremi__firma{
+    width: 18rem;
+    height: 4rem;
+    margin: 1.6rem auto 6.4rem auto;
+}
+
+/* contenido principal */
+
+/* skills */
+.skill__titulo{
+    margin: 3.2rem auto;
+}
+
+.skill__contenido{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill__imagen{
+    background-color: var(--colorBlanco);
+    width: 17.6rem ;
+    height: 17.4rem ;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill__imagen img{
+    width: 4rem;
+    height: 4.5rem;
+}
+
+.skill__texto{
+    color: var(--colorPrincipal);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* hobbies */
+
+.contenidoPrincipal__hobbies{
+    margin-top: 8.4rem;
+}
+
+.hobbies__contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobbies__contenido{
+    background-color: var(--colorPrincipal);
+    width: 17.6rem;
+    height: 17.6rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hobbies__imagen{
+    width: 4rem;
+    height: 4.5rem;
+}
+
+.hobbies__texto{
+    color: var(--colorBlanco);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* formacion academica */
+
+.contenidoPrincipal__formacionAcademica{
+    background-color: var(--colorPrincipal);
+    margin-top: 8.8rem;
+}
+
+.formacion__titulo{
+    padding: 8.2rem 0 3.2rem 0;
+}
+
+.formacion__flex{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formacion__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formacion__enlace{
+    background-color: var(--colorBlanco);
+    border-radius: 1rem;
+    width: 36.8rem;
+}
+
+.formacion__enlace a{
+    display: flex;
+    width: 36.8rem;
+    height: 24.6rem;
+}
+
+.formacion__imagen{
+    width: 19rem;
+    height: 13rem;
+    margin: auto;
+}
+
+.formacion__textos{
+    text-align: center;
+    margin: .8rem auto 8.2rem auto;
+}
+
+.formacion__textos a{
+    width: 34rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--colorBlanco);
+    font-weight: bold;
+    font-size: 2.2rem;
+    word-wrap: break-word;
+}
+
+/* proyectos */
+
+.proyecto__titulo{
+    margin: 3.2rem auto;
+}
+
+.proyecto__cotenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12.8rem;
+    gap: 6.4rem;
+}
+
+.proyecto__contenido{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1.6rem;
+}
+
+.proyecto__contenido--reversa{
+    flex-direction: row;
+}
+
+.tituloProyecto{
+    font-size: 2.2rem;
+    margin: 8px 0;
+}
+
+.proyecto__enlace{
+    display: flex;
+    gap: 3.2rem;
+}
+
+.enlace__boton{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.boton--sinFondo{
+    background-color: var(--colorNegroboton);
+    border: solid var(--colorPrincipal) .1rem;
+    color: var(--colorPrincipal);
+}
+
+/* formulario */
+
+#section__conctacto{
+    background-color: var(--colorPrincipal);
+    padding-top: 12.8rem;
+    padding-bottom: 6.8rem;
+}
+
+.formulario{
+    display: flex;
+    gap: 2rem;
+}
+
+.formulario__img{
+    width: 46.4rem;
+    height: 59.3rem;
+}
+
+.formulario__titulo{
+    margin: 0 0 .8rem 1.14rem;
+    text-align: left;
+}
+
+.formulario__contorno{
+    border: none;
+}
+
+.formulario__legen{
+    margin-bottom: 2.2rem;
+}
+
+.contenedor__input{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.input__relativo{
+    position: relative;
+}
+
+.input__input{
+    display: block;
+    width: 65.6rem;
+    height: 5.6rem;
+    padding: 1.6rem 0 1.6rem 1.2rem;
+    margin: 0;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    font-size: 16px;
+    border-bottom: solid #aaaaaa 2px;
+}
+
+.input__text{
+    position: absolute;
+    color: #aaaaaa;
+    top: 50%;
+    left: 1.13rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translateY(-50%); /* Centrar el label verticalmente */
+}
+
+
+.input__input:focus + .input__text,.input__input:not(:placeholder-shown) + .input__text {
+    top: 10px ; /* Mueve el label hacia arriba */
+    left: 8px; /* Mantiene el label alineado a la izquierda */
+    font-size: 12px; /* Reduce el tamaño del font */
+    color: var(--colorNegro); /* Cambia el color cuando el input está enfocado o tiene texto */
+}
+
+.input__input:not(:placeholder-shown) + .input__text{
+    color: #aaaaaa;
+}
+
+.input__input:focus {
+    padding-top: 2rem; /* Espacio extra para que el label no se superponga al texto */
+    border-bottom: solid var(--colorNegro) 3px;
+}
+
+.input__text-area{
+    position: absolute;
+    color: #aaaaaa;
+    top: 2.6rem;
+    left: 1.13rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translateY(-50%);
+}
+
+.input__texarea{
+    width: 65.6rem;
+    height: 13.3rem;
+    resize: none;
+    outline: none;
+    padding-top: 2rem;
+    border: none;
+    border-bottom: solid #aaaaaa 3px;
+}
+
+.input__texarea:focus + .input__text-area,
+.input__texarea:not(:placeholder-shown) + .input__text-area{
+    top: 10px;
+    left: 8px;
+    font-size: 12px;
+    color: var(--colorNegro);
+}
+
+.input__texarea:not(:placeholder-shown) + .input__text-area{
+    color: #aaaaaa;
+}
+
+
+.input__texarea:focus{
+    padding-top: 2rem;
+    border-bottom: solid var(--colorNegro) 3px;
+}
+
+.boton__form{
+    background-color: var(--colorNegro);
+    border: solid var(--colorBlanco) 1px;
+    color: var(--colorPrincipal);
+    font-weight: bold;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--colorBlanco);
+    height: 6.2rem;
+}
+
+.footer p {
+    padding: 2rem 0;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
